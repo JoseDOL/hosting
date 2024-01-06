@@ -51,7 +51,7 @@ function celebrate2() {
 }
 // Obtén el elemento h1
 // Palabra a mostrar
-var palabra = "Feliz Cumpleaños \n Alejandra";
+var palabra = "Feliz Cumpleaños "; //\n Alejandra";
 
 // Obtén el elemento h1
 var h1Element = document.getElementById("miTitulo");
