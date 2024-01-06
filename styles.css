@@ -1,0 +1,151 @@
+body {
+    background: #234;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.center-container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+
+@keyframes firework {
+    0% {
+        transform: translate(-50%, 100vh);
+        width: 0.5vmin;
+        opacity: 1;
+    }
+    50% {
+        width: 0.5vmin;
+        opacity: 1;
+    }
+    100% {
+        width: 45vmin;
+        opacity: 0;
+    }
+}
+
+.firework,
+.firework::before,
+.firework::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5vmin;
+    aspect-ratio: 1;
+    background:
+        radial-gradient(circle, #ff0 0.2vmin, #0000 0) 50% 00%,
+        radial-gradient(circle, #f0f 0.3vmin, #0000 0) 00% 50%,
+        radial-gradient(circle, #0ff 0.5vmin, #0000 0) 50% 99%,
+        radial-gradient(circle, #0f0 0.2vmin, #0000 0) 99% 50%,
+        radial-gradient(circle, #00f 0.3vmin, #0000 0) 80% 90%,
+        radial-gradient(circle, #f00 0.5vmin, #0000 0) 95% 90%,
+        radial-gradient(circle, #ff0 0.5vmin, #0000 0) 10% 60%,
+        radial-gradient(circle, #f0f 0.2vmin, #0000 0) 31% 80%,
+        radial-gradient(circle, #0ff 0.3vmin, #0000 0) 80% 10%,
+        radial-gradient(circle, #0f0 0.2vmin, #0000 0) 90% 23%,
+        radial-gradient(circle, #00f 0.3vmin, #0000 0) 45% 20%,
+        radial-gradient(circle, #f00 0.5vmin, #0000 0) 13% 24%;
+    background-size: 0.5vmin 0.5vmin;
+    background-repeat: no-repeat;
+    animation: firework 2s infinite;
+}
+
+.firework::before {
+    transform: translate(-50%, -50%) rotate(25deg) !important;
+}
+
+.firework::after {
+    transform: translate(-50%, -50%) rotate(-37deg) !important;
+}
+
+.centrado {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0 auto;
+  }
+
+  /* Estilo para centrar los h1 dentro del div */
+  .centrado h1 {
+    color: rgb(214, 214, 224); /* Puedes personalizar el color aquí */
+  }
+
+
+  @keyframes bounceInDown {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+  h1 {
+    font-family: 'Bradley Hand', cursive;
+    font-size: 2em;
+    display: inline-block;
+    margin: 0;
+  }
+
+  /* Aplica colores aleatorios a cada letra */
+  h1 span {
+    display: inline-block;
+    animation: bounceInDown 1s ease-in-out infinite;
+  }
+
+  .centrado {
+    text-align: center;
+  }
+
+  #divFork1 img {
+    width: 50%; /* Ajusta el porcentaje según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 400px; /* Opcional: Establece un ancho máximo para la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  #divFork2 img {
+    width: 50%; /* Ajusta el porcentaje según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 400px; /* Opcional: Establece un ancho máximo para la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  #divTitle img {
+    width: 50%; /* Ajusta el porcentaje según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 400px; /* Opcional: Establece un ancho máximo para la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  #divFork4 img {
+    width: 50%; /* Ajusta el porcentaje según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 400px; /* Opcional: Establece un ancho máximo para la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  #divFork5 img {
+    width: 50%; /* Ajusta el porcentaje según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 400px; /* Opcional: Establece un ancho máximo para la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
