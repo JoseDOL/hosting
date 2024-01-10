@@ -44,8 +44,6 @@ function celebrate2() {
       divTitle.style.display = 'block';
       for (let index = 0; index < 10; index++) {
         celebrate();
-        celebrate();
-        celebrate();
     }
     }, timer * 4 );
 }
