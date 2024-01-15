@@ -20,6 +20,9 @@ function celebrate2() {
     const divFork2 = document.getElementById('divFork2');
     const divFork4 = document.getElementById('divFork4');
     const divFork5 = document.getElementById('divFork5');
+    const divFork6 = document.getElementById('divFork6');
+    const divFork7 = document.getElementById('divFork7');
+    const divFork8 = document.getElementById('divFork8');
     button.style.display = 'none';
     divFork1.style.display = 'block'
    
@@ -41,11 +44,26 @@ function celebrate2() {
 
     setTimeout(() => {
       divFork5.style.display = 'none';
+      divFork6.style.display = 'block';
+    }, timer * 4 );
+
+    setTimeout(() => {
+      divFork6.style.display = 'none';
       divTitle.style.display = 'block';
       for (let index = 0; index < 10; index++) {
         celebrate();
     }
-    }, timer * 4 );
+    }, timer * 5 );
+
+    setTimeout(() => {
+      divTitle.style.display = 'none';
+      divFork7.style.display = 'block';
+    }, timer * 6 );
+
+    setTimeout(() => {
+      divFork7.style.display = 'none';
+      divFork8.style.display = 'block';
+    }, timer * 7 );
 }
 // Obtén el elemento h1
 // Palabra a mostrar

@@ -150,7 +150,29 @@ button {
     margin: 0 auto; /* Centra la imagen horizontalmente */
   }
 
+  #divFork6 img {
+    width: 50%; /* Ajusta el porcentaje según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 400px; /* Opcional: Establece un ancho máximo para la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
 
+  #divFork7 img {
+    width: 50%; /* Ajusta el porcentaje según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 400px; /* Opcional: Establece un ancho máximo para la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  #divFork8 img {
+    width: 50%; /* Ajusta el porcentaje según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 400px; /* Opcional: Establece un ancho máximo para la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
   /****************************************************************************/
 
 
