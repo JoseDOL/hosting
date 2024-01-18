@@ -23,6 +23,7 @@ function celebrate2() {
     const divFork6 = document.getElementById('divFork6');
     const divFork7 = document.getElementById('divFork7');
     const divFork8 = document.getElementById('divFork8');
+    const divFork9 = document.getElementById('divFork9');
     button.style.display = 'none';
     divFork1.style.display = 'block'
    
@@ -64,6 +65,11 @@ function celebrate2() {
       divFork7.style.display = 'none';
       divFork8.style.display = 'block';
     }, timer * 7 );
+
+    setTimeout(() => {
+      divFork8.style.display = 'none';
+      divFork9.style.display = 'block';
+    }, timer * 8 );
 }
 // Obtén el elemento h1
 // Palabra a mostrar
@@ -218,3 +224,20 @@ function isOnHeart(x,y){
          $(".pop").fadeOut(100);
      });
  });
+
+
+ function mostrarImagenAgrandada(imagenPequena) {
+  var imagenAgrandada = document.getElementById('imagenAgrandada');
+  var imagenAgrandadaContenido = imagenAgrandada.querySelector('img');
+
+  // Asigna la misma fuente que la imagen pequeña
+  imagenAgrandadaContenido.src = imagenPequena.src;
+
+  // Muestra la imagen agrandada
+  imagenAgrandada.style.display = 'block';
+
+  // Cierra la imagen agrandada al hacer clic en ella
+  imagenAgrandada.onclick = function() {
+    imagenAgrandada.style.display = 'none';
+  };
+}

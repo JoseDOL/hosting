@@ -173,6 +173,14 @@ button {
     display: block; /* Elimina el espacio extra debajo de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente */
   }
+
+  #divFork9 img {
+    width: 50%; /* Ajusta el porcentaje según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 500px; /* Opcional: Establece un ancho máximo para la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
   /****************************************************************************/
 
 
@@ -315,4 +323,16 @@ section > button:hover {
   padding: 6px 0px 0px 9px;
   width: 30px;
   height: 30px;
+}
+
+#imagenAgrandada {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  max-height: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
 }
