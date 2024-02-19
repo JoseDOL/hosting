@@ -13,7 +13,7 @@ function celebrate() {
 }
 
 function celebrate2() {
-  timer = 7000
+  timer = 8000
     const button = document.getElementById('partyButton');
     const divTitle = document.getElementById('divTitle');
     const divFork1 = document.getElementById('divFork1');
@@ -56,7 +56,7 @@ function celebrate2() {
     }
     }, timer * 5 );
 
-    setTimeout(() => {
+   /* setTimeout(() => {
       divTitle.style.display = 'none';
       divFork7.style.display = 'block';
     }, timer * 6 );
@@ -69,11 +69,11 @@ function celebrate2() {
     setTimeout(() => {
       divFork8.style.display = 'none';
       divFork9.style.display = 'block';
-    }, timer * 8 );
+    }, timer * 8 );*/
 }
 // Obtén el elemento h1
 // Palabra a mostrar
-var palabra = "Feliz Cumpleaños "; //\n Alejandra";
+var palabra = "Feliz Cumpleaños \n Alejandra"; //\n Alejandra";
 
 // Obtén el elemento h1
 var h1Element = document.getElementById("miTitulo");
